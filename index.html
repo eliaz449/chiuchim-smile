@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="חיוכים SMILE - מרפאת שיניים המציעה טיפולים מתקדמים באווירה רגועה, בשקיפות מלאה ויחס אישי, במיוחד עבור סובלים מחרדה דנטלית.">
+<meta name="theme-color" content="#40a09d">
+<title>חיוכים SMILE | חיוך מושלם ובריא בלי פחד</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    /* Navy / dark */
+    --navy:#1a2942;
+    --navy-2:#243553;
+    --navy-deep:#0f1c33;
+    /* Teal palette */
+    --teal:#40a09d;
+    --teal-dark:#2d7a78;
+    --teal-darker:#1e5e5c;
+    --teal-light:#7ec0bd;
+    --teal-lighter:#a8d4d1;
+    /* Mint backgrounds */
+    --mint-50:#f4faf9;
+    --mint-100:#e8f4f3;
+    --mint-200:#d8eceb;
+    --mint-300:#bedbd9;
+    /* Neutrals */
+    --paper:#ffffff;
+    --cream:#fdfcf9;
+    --ink:#1a2942;
+    --ink-soft:#3a4a63;
+    --muted:#6b7a8f;
+    --muted-2:#94a0b3;
+    --line:rgba(64,160,157,0.18);
+    --line-soft:rgba(26,41,66,0.08);
+    /* Type */
+    --serif:'Frank Ruhl Libre',serif;
+    --sans:'Heebo','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+    font-weight:400;
+    line-height:1.65;
+  }
+
+  h1,h2,h3,h4{font-family:var(--sans);font-weight:800;line-height:1.15;letter-spacing:-0.02em;color:var(--navy);}
+  .serif-italic{font-family:var(--serif);font-style:italic;font-weight:500;}
+
+  .container{max-width:1280px;margin:0 auto;padding:0 32px;}
+  .container-narrow{max-width:920px;margin:0 auto;padding:0 32px;}
+
+  .eyebrow{
+    font-family:var(--sans);
+    font-size:13px;font-weight:600;
+    letter-spacing:0.18em;text-transform:uppercase;
+    color:var(--teal);
+  }
+
+  /* ── BIG FAINT WATERMARK TEXT ── */
+  .watermark{
+    position:absolute;
+    font-family:var(--sans);font-weight:900;
+    font-size:clamp(80px,12vw,180px);
+    letter-spacing:-0.04em;line-height:0.9;
+    color:rgba(26,41,66,0.05);
+    pointer-events:none;user-select:none;
+    white-space:nowrap;z-index:0;
+  }
+  .watermark-teal{color:rgba(64,160,157,0.07);}
+
+  /* ── BUTTONS (PILL) ── */
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:18px 38px;
+    border-radius:999px;
+    font-family:var(--sans);font-size:15px;font-weight:700;
+    text-decoration:none;cursor:pointer;border:none;
+    transition:all .3s cubic-bezier(.4,0,.2,1);
+    letter-spacing:0.01em;
+  }
+  .btn-teal{background:var(--teal);color:#fff;box-shadow:0 6px 20px rgba(64,160,157,0.28);}
+  .btn-teal:hover{background:var(--teal-dark);transform:translateY(-2px);box-shadow:0 10px 28px rgba(64,160,157,0.38);}
+  .btn-white{background:#fff;color:var(--teal-dark);box-shadow:0 6px 20px rgba(0,0,0,0.12);}
+  .btn-white:hover{background:var(--mint-100);transform:translateY(-2px);}
+  .btn-navy{background:var(--navy);color:#fff;box-shadow:0 6px 20px rgba(26,41,66,0.2);}
+  .btn-navy:hover{background:var(--navy-deep);transform:translateY(-2px);}
+
+  /* ── QUALIFIER BAR ── */
+  .qualifier{
+    background:var(--navy-deep);
+    color:#fff;
+    text-align:center;
+    padding:14px 24px;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:0.02em;
+  }
+
+  /* ── PROMO STRIP ── */
+  .promo{
+    background:var(--mint-100);
+    border-bottom:1px solid var(--line);
+  }
+  .promo-inner{
+    max-width:1280px;margin:0 auto;padding:18px 32px;
+    display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center;
+  }
+  .promo-mark{
+    width:36px;height:36px;border-radius:50%;
+    background:var(--teal);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:16px;
+  }
+  .promo-text{font-size:15px;font-weight:500;color:var(--navy);}
+  .promo-text strong{color:var(--teal-dark);font-weight:800;}
+  .promo-sub{font-size:13px;color:var(--muted);font-weight:500;}
+
+  /* ── HERO ── */
+  .hero{
+    position:relative;
+    background:var(--navy-deep);
+    color:#fff;
+    min-height:88vh;
+    overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background-image:url('https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=2000&q=90');
+    background-size:cover;background-position:center;
+    opacity:0.35;
+  }
+  .hero-tint{
+    position:absolute;inset:0;
+    background:
+      linear-gradient(135deg, rgba(64,160,157,0.55) 0%, rgba(26,41,66,0.82) 100%);
+  }
+  .hero-pattern{
+    position:absolute;inset:0;opacity:0.06;pointer-events:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%23ffffff' stroke-width='1.5'><path d='M20 30 L25 40 L30 30 L35 40 L40 30'/><circle cx='60' cy='20' r='4'/><path d='M55 55 L65 65 M65 55 L55 65'/><path d='M15 65 Q20 55 25 65 Q30 75 35 65'/></g></svg>");
+  }
+  .hero-inner{
+    position:relative;z-index:2;
+    max-width:1280px;margin:0 auto;padding:48px 32px 96px;
+    display:grid;grid-template-columns:1fr;gap:48px;
+    min-height:88vh;align-content:center;
+  }
+  @media(min-width:1024px){
+    .hero-inner{grid-template-columns:1.15fr 1fr;gap:80px;align-items:center;}
+  }
+
+  .hero-brand{display:flex;align-items:center;gap:16px;margin-bottom:40px;}
+  .hero-brand-mark{
+    width:56px;height:56px;border-radius:50%;
+    background:rgba(255,255,255,0.12);
+    border:2px solid rgba(255,255,255,0.3);
+    display:flex;align-items:center;justify-content:center;
+    backdrop-filter:blur(8px);
+  }
+  .hero-brand-mark svg{width:30px;height:30px;color:#fff;}
+  .hero-brand-name{
+    font-size:13px;font-weight:700;letter-spacing:0.28em;
+    color:#fff;text-transform:uppercase;
+  }
+  .hero-brand-sub{
+    font-size:12px;color:var(--teal-lighter);
+    font-weight:500;margin-top:4px;
+  }
+
+  .hero h1{
+    font-size:clamp(40px,5.8vw,72px);
+    color:#fff;font-weight:800;
+    margin-bottom:28px;line-height:1.1;
+  }
+  .hero h1 em{
+    font-family:var(--serif);font-style:italic;font-weight:500;
+    color:var(--teal-lighter);
+  }
+  .hero-lede{
+    font-size:18px;line-height:1.75;
+    color:rgba(255,255,255,0.85);
+    max-width:580px;font-weight:400;
+    margin-bottom:40px;
+  }
+  .hero-lede strong{color:#fff;font-weight:700;}
+
+  .hero-attrs{
+    display:flex;gap:14px;flex-wrap:wrap;
+    margin-top:8px;
+  }
+  .hero-attr{
+    display:inline-flex;align-items:center;gap:10px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.18);
+    backdrop-filter:blur(8px);
+    padding:12px 20px;border-radius:999px;
+    font-size:14px;font-weight:600;
+  }
+  .hero-attr-check{
+    width:20px;height:20px;border-radius:50%;
+    background:var(--teal);color:#fff;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .hero-attr-check svg{width:12px;height:12px;}
+
+  /* Hero form */
+  .hero-form-wrap{position:relative;}
+  .hero-form{
+    background:#fff;
+    color:var(--ink);
+    padding:44px 36px;
+    border-radius:32px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.25);
+    position:relative;
+  }
+  .hero-form-badge{
+    position:absolute;top:-14px;right:36px;
+    background:var(--teal);color:#fff;
+    padding:8px 20px;border-radius:999px;
+    font-size:12px;font-weight:700;letter-spacing:0.1em;
+  }
+
+  .form-title{
+    font-size:26px;font-weight:800;color:var(--navy);
+    text-align:center;margin-bottom:8px;
+  }
+  .form-title em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--teal-dark);}
+  .form-sub{
+    text-align:center;font-size:14px;color:var(--muted);
+    margin-bottom:28px;font-weight:500;
+  }
+
+  .form-field{margin-bottom:18px;}
+  .form-field label{
+    display:block;font-size:13px;font-weight:600;
+    color:var(--ink-soft);margin-bottom:8px;
+  }
+  .form-field input{
+    width:100%;background:var(--mint-50);
+    border:1.5px solid var(--mint-200);
+    border-radius:14px;
+    padding:14px 18px;
+    color:var(--ink);
+    font-family:var(--sans);font-size:15px;font-weight:500;
+    transition:all .25s ease;outline:none;
+  }
+  .form-field input:focus{
+    border-color:var(--teal);background:#fff;
+    box-shadow:0 0 0 4px rgba(64,160,157,0.12);
+  }
+  .form-field input[dir="ltr"]{text-align:right;direction:ltr;}
+
+  .form-cta{
+    width:100%;background:var(--teal);color:#fff;
+    border:none;border-radius:999px;
+    padding:18px 24px;
+    font-family:var(--sans);font-size:15px;font-weight:700;
+    cursor:pointer;margin-top:8px;
+    transition:all .3s cubic-bezier(.4,0,.2,1);
+    box-shadow:0 8px 22px rgba(64,160,157,0.32);
+    display:flex;align-items:center;justify-content:center;gap:10px;
+  }
+  .form-cta:hover{background:var(--teal-dark);transform:translateY(-2px);box-shadow:0 12px 30px rgba(64,160,157,0.42);}
+
+  .form-secure{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    margin-top:18px;font-size:12px;color:var(--muted);font-weight:500;
+  }
+  .form-secure svg{width:12px;height:14px;color:var(--teal);}
+
+  /* ── SECTIONS ── */
+  section{padding:120px 0;position:relative;}
+  @media(max-width:767px){section{padding:80px 0;}}
+
+  .section-head{text-align:center;margin-bottom:72px;position:relative;}
+  .section-head .eyebrow{display:block;margin-bottom:20px;}
+  .section-head h2{
+    font-size:clamp(34px,4.5vw,56px);
+    margin-bottom:20px;
+  }
+  .section-head h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--teal-dark);}
+  .section-head p{
+    max-width:720px;margin:0 auto;font-size:17px;line-height:1.8;
+    color:var(--ink-soft);font-weight:400;
+  }
+
+  /* ── PROBLEM ── */
+  .problem{background:var(--mint-50);}
+  .problem-grid{
+    display:grid;grid-template-columns:1fr;gap:64px;align-items:center;
+  }
+  @media(min-width:1024px){
+    .problem-grid{grid-template-columns:1fr 1.15fr;gap:80px;}
+  }
+  .problem-img-wrap{position:relative;}
+  .problem-img-wrap::before{
+    content:'';position:absolute;inset:24px -24px -24px 24px;
+    background:var(--teal);border-radius:32px;z-index:0;opacity:0.5;
+  }
+  .problem-img{
+    position:relative;z-index:1;
+    width:100%;aspect-ratio:4/5;object-fit:cover;
+    border-radius:32px;
+    box-shadow:0 20px 50px rgba(26,41,66,0.18);
+  }
+  .problem-content h2{
+    font-size:clamp(32px,4.2vw,48px);
+    margin-bottom:24px;
+  }
+  .problem-content h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--teal-dark);}
+  .problem-content > p{
+    font-size:17px;line-height:1.85;color:var(--ink-soft);
+    margin-bottom:32px;font-weight:400;
+  }
+  .problem-list{list-style:none;display:grid;gap:14px;margin-bottom:40px;}
+  .problem-list li{
+    display:flex;gap:16px;align-items:flex-start;
+    background:#fff;border-radius:18px;padding:18px 22px;
+    border:1px solid var(--line-soft);
+    box-shadow:0 2px 12px rgba(26,41,66,0.04);
+  }
+  .problem-list-mark{
+    width:28px;height:28px;border-radius:50%;
+    background:var(--mint-100);color:var(--teal-dark);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    font-weight:800;font-size:14px;
+  }
+  .problem-list-text{
+    font-size:15px;line-height:1.65;color:var(--ink);font-weight:500;
+  }
+  .problem-list-text strong{color:var(--teal-dark);font-weight:700;}
+
+  .problem-quote{
+    background:linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%);
+    color:#fff;border-radius:32px;padding:40px 36px;
+    box-shadow:0 18px 40px rgba(64,160,157,0.28);
+    position:relative;overflow:hidden;
+  }
+  .problem-quote::before{
+    content:'';position:absolute;top:-40px;left:-40px;
+    width:160px;height:160px;border-radius:50%;
+    background:rgba(255,255,255,0.08);
+  }
+  .problem-quote p{font-size:16px;line-height:1.85;font-weight:400;position:relative;}
+  .problem-quote strong{color:#fff;font-weight:800;}
+
+  /* ── BRIDGE ── */
+  .bridge{background:var(--navy-deep);color:#fff;overflow:hidden;}
+  .bridge .watermark{color:rgba(255,255,255,0.04);}
+  .bridge-head{text-align:center;margin-bottom:80px;position:relative;}
+  .bridge-head .eyebrow{color:var(--teal-lighter);display:block;margin-bottom:20px;}
+  .bridge-head h2{
+    color:#fff;font-size:clamp(36px,4.8vw,60px);
+    max-width:1000px;margin:0 auto 24px;
+  }
+  .bridge-head h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--teal-lighter);}
+  .bridge-head p{
+    color:rgba(255,255,255,0.75);max-width:760px;margin:0 auto;
+    font-size:17px;line-height:1.85;
+  }
+
+  .bridge-grid{
+    display:grid;grid-template-columns:1fr;gap:24px;
+  }
+  @media(min-width:768px){.bridge-grid{grid-template-columns:repeat(3,1fr);}}
+  .bridge-card{
+    background:var(--teal);color:#fff;
+    border-radius:32px;
+    padding:48px 32px;text-align:center;
+    box-shadow:0 18px 40px rgba(64,160,157,0.22);
+    position:relative;overflow:hidden;
+    transition:transform .35s ease,box-shadow .35s ease;
+  }
+  .bridge-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(64,160,157,0.3);}
+  .bridge-card::before{
+    content:'';position:absolute;top:-30px;left:-30px;
+    width:120px;height:120px;border-radius:50%;
+    background:rgba(255,255,255,0.08);
+  }
+  .bridge-card-icon{
+    width:72px;height:72px;border-radius:50%;
+    background:rgba(255,255,255,0.18);
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 24px;position:relative;
+    border:2px solid rgba(255,255,255,0.3);
+  }
+  .bridge-card-icon svg{width:32px;height:32px;color:#fff;}
+  .bridge-card h3{
+    color:#fff;font-size:24px;margin-bottom:14px;font-weight:800;
+  }
+  .bridge-card p{
+    color:rgba(255,255,255,0.9);font-size:15px;line-height:1.7;font-weight:400;
+  }
+  .bridge-card strong{color:#fff;font-weight:800;}
+
+  .bridge-cta-wrap{text-align:center;margin-top:64px;}
+
+  /* ── STATS ── */
+  .stats{background:var(--mint-100);overflow:hidden;}
+  .stats-head{text-align:center;margin-bottom:64px;position:relative;}
+  .stats-head .eyebrow{display:block;margin-bottom:18px;}
+  .stats-head h2{
+    font-size:clamp(30px,3.8vw,46px);
+  }
+  .stats-head h2 em{font-family:var(--serif);font-style:italic;color:var(--teal-dark);font-weight:500;}
+
+  .stats-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:20px;
+  }
+  @media(min-width:768px){.stats-grid{grid-template-columns:repeat(4,1fr);}}
+  .stat-card{
+    background:#fff;border-radius:28px;
+    padding:40px 24px;text-align:center;
+    border:1px solid var(--line);
+    box-shadow:0 8px 24px rgba(26,41,66,0.06);
+    transition:transform .35s ease;
+  }
+  .stat-card:hover{transform:translateY(-4px);}
+  .stat-num{
+    font-size:clamp(48px,5.5vw,68px);
+    font-weight:900;color:var(--teal);
+    line-height:1;margin-bottom:14px;
+    letter-spacing:-0.04em;
+  }
+  .stat-num em{font-family:var(--serif);font-style:italic;color:var(--teal-dark);font-weight:500;}
+  .stat-label{
+    font-size:14px;color:var(--ink-soft);font-weight:600;line-height:1.55;
+  }
+
+  /* ── SOLUTION ── */
+  .solution{background:#fff;overflow:hidden;}
+  .solution-grid{
+    display:grid;grid-template-columns:1fr;gap:64px;align-items:center;
+  }
+  @media(min-width:1024px){.solution-grid{grid-template-columns:1.05fr 1fr;}}
+  .solution-img-wrap{position:relative;order:2;}
+  @media(min-width:1024px){.solution-img-wrap{order:1;}}
+  .solution-img-wrap::before{
+    content:'';position:absolute;inset:-20px -20px 32px 32px;
+    background:var(--mint-100);border-radius:36px;z-index:0;
+  }
+  .solution-img{
+    position:relative;z-index:1;
+    width:100%;aspect-ratio:4/5;object-fit:cover;
+    border-radius:32px;
+    box-shadow:0 20px 50px rgba(26,41,66,0.15);
+  }
+  .solution-badge{
+    position:absolute;bottom:24px;right:24px;z-index:2;
+    background:#fff;border-radius:999px;
+    padding:14px 24px;
+    box-shadow:0 8px 24px rgba(26,41,66,0.18);
+    display:flex;align-items:center;gap:12px;
+  }
+  .solution-badge-dot{width:10px;height:10px;border-radius:50%;background:var(--teal);}
+  .solution-badge-text{font-size:13px;font-weight:700;color:var(--navy);letter-spacing:0.04em;}
+
+  .solution-content{order:1;}
+  @media(min-width:1024px){.solution-content{order:2;}}
+  .solution-content .eyebrow{display:block;margin-bottom:20px;}
+  .solution-content h2{
+    font-size:clamp(34px,4.5vw,52px);
+    margin-bottom:18px;
+  }
+  .solution-content h2 .small{
+    display:block;font-family:var(--serif);font-style:italic;font-weight:500;
+    font-size:0.55em;color:var(--teal-dark);margin-top:12px;
+  }
+  .solution-content > p{
+    font-size:16px;line-height:1.85;color:var(--ink-soft);
+    margin-bottom:40px;font-weight:400;
+    padding-bottom:32px;border-bottom:2px solid var(--mint-200);
+  }
+  .solution-content strong{color:var(--navy);font-weight:700;}
+
+  .solution-step{
+    display:grid;grid-template-columns:auto 1fr;gap:24px;
+    padding:24px 0;align-items:flex-start;
+  }
+  .solution-step-num{
+    width:56px;height:56px;border-radius:50%;
+    background:var(--mint-100);color:var(--teal-dark);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:900;font-size:20px;flex-shrink:0;
+    border:2px solid var(--teal-lighter);
+  }
+  .solution-step h3{
+    font-size:21px;font-weight:800;margin-bottom:8px;color:var(--navy);
+  }
+  .solution-step p{font-size:15px;line-height:1.75;color:var(--ink-soft);font-weight:400;}
+  .solution-step strong{color:var(--teal-dark);font-weight:700;}
+
+  /* ── FUTURE ── */
+  .future{
+    background:var(--mint-100);text-align:center;overflow:hidden;
+  }
+  .future-inner{position:relative;}
+  .future-inner .eyebrow{display:block;margin-bottom:20px;}
+  .future h2{
+    font-size:clamp(34px,5vw,60px);
+    max-width:880px;margin:0 auto 24px;
+  }
+  .future h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--teal-dark);}
+  .future-lede{
+    font-size:18px;line-height:1.85;max-width:720px;margin:0 auto 56px;
+    color:var(--ink-soft);font-weight:400;
+  }
+  .future-lede strong{color:var(--navy);font-weight:700;}
+
+  .future-list-wrap{
+    max-width:720px;margin:0 auto 48px;
+    background:#fff;border-radius:36px;
+    padding:48px 44px;text-align:right;
+    box-shadow:0 18px 40px rgba(26,41,66,0.08);
+    border:1px solid var(--line);
+    position:relative;
+  }
+  .future-list-head{
+    font-size:22px;font-weight:800;color:var(--teal-dark);
+    margin-bottom:28px;padding-bottom:20px;
+    border-bottom:2px solid var(--mint-200);text-align:center;
+  }
+  .future-list{list-style:none;display:grid;gap:8px;}
+  .future-list li{
+    display:flex;gap:14px;align-items:flex-start;padding:12px 0;
+    font-size:15px;line-height:1.65;color:var(--ink);font-weight:500;
+  }
+  .future-list-check{
+    width:24px;height:24px;border-radius:50%;
+    background:var(--teal);color:#fff;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    margin-top:2px;
+  }
+  .future-list-check svg{width:13px;height:13px;}
+  .future-list strong{color:var(--teal-dark);font-weight:700;}
+
+  .future-closing{
+    font-size:20px;font-weight:600;max-width:720px;margin:0 auto 40px;
+    line-height:1.5;color:var(--navy);
+  }
+  .future-closing em{font-family:var(--serif);font-style:italic;color:var(--teal-dark);font-weight:500;}
+
+  /* ── MECHANISM ── */
+  .mechanism{background:var(--navy-deep);color:#fff;overflow:hidden;}
+  .mechanism .watermark{color:rgba(255,255,255,0.04);}
+  .mechanism-head{text-align:center;margin-bottom:72px;position:relative;}
+  .mechanism-head .eyebrow{color:var(--teal-lighter);display:block;margin-bottom:18px;}
+  .mechanism-head h2{
+    color:#fff;font-size:clamp(34px,4.6vw,56px);margin-bottom:18px;
+  }
+  .mechanism-head h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--teal-lighter);}
+  .mechanism-head p{color:rgba(255,255,255,0.7);font-size:17px;}
+
+  .mechanism-grid{
+    display:grid;grid-template-columns:1fr;gap:20px;
+  }
+  @media(min-width:768px){.mechanism-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:1024px){.mechanism-grid{grid-template-columns:repeat(4,1fr);}}
+  .mech-card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:28px;padding:36px 28px;
+    transition:all .35s ease;position:relative;
+    backdrop-filter:blur(6px);
+  }
+  .mech-card:hover{
+    background:rgba(64,160,157,0.12);
+    border-color:rgba(64,160,157,0.4);
+    transform:translateY(-4px);
+  }
+  .mech-num{
+    width:48px;height:48px;border-radius:50%;
+    background:var(--teal);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:900;font-size:18px;margin-bottom:24px;
+    box-shadow:0 6px 18px rgba(64,160,157,0.4);
+  }
+  .mech-card h3{
+    color:#fff;font-size:20px;margin-bottom:14px;font-weight:800;line-height:1.3;
+  }
+  .mech-card p{color:rgba(255,255,255,0.7);font-size:14px;line-height:1.7;font-weight:400;}
+  .mech-card strong{color:var(--teal-lighter);font-weight:700;}
+
+  /* ── FOUNDER ── */
+  .founder{background:#fff;overflow:hidden;}
+  .founder-card{
+    display:grid;grid-template-columns:1fr;
+    background:var(--mint-50);
+    border-radius:40px;overflow:hidden;
+    box-shadow:0 20px 50px rgba(26,41,66,0.08);
+    border:1px solid var(--line);
+  }
+  @media(min-width:1024px){.founder-card{grid-template-columns:1fr 1.2fr;}}
+  .founder-img-wrap{
+    position:relative;min-height:480px;
+    background:linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%);
+  }
+  .founder-img{
+    width:100%;height:100%;object-fit:cover;position:absolute;inset:0;
+    mix-blend-mode:luminosity;opacity:0.85;
+  }
+  .founder-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 50%,rgba(26,41,66,0.5) 100%);
+  }
+  .founder-tag{
+    position:absolute;top:32px;right:32px;z-index:2;
+    background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);
+    border-radius:999px;padding:10px 20px;
+    font-size:12px;font-weight:700;letter-spacing:0.16em;
+    color:var(--teal-dark);text-transform:uppercase;
+  }
+  .founder-content{padding:64px 52px;}
+  @media(max-width:767px){.founder-content{padding:48px 32px;}}
+  .founder-content .eyebrow{display:block;margin-bottom:18px;}
+  .founder-content h2{
+    font-size:clamp(28px,3.4vw,40px);margin-bottom:24px;line-height:1.2;
+  }
+  .founder-content h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--teal-dark);}
+  .founder-content > p{
+    font-size:15px;line-height:1.85;color:var(--ink-soft);
+    margin-bottom:18px;font-weight:400;
+  }
+  .founder-content strong{color:var(--navy);font-weight:700;}
+  .founder-content h3{
+    font-family:var(--sans);font-size:15px;font-weight:800;
+    color:var(--teal-dark);margin-top:24px;margin-bottom:12px;
+  }
+
+  /* ── OBJECTIONS ── */
+  .objections{background:var(--mint-50);}
+  .obj-list{max-width:880px;margin:0 auto;display:grid;gap:20px;}
+  .obj-card{
+    background:#fff;border-radius:28px;padding:36px 36px;
+    border:1px solid var(--line);
+    box-shadow:0 6px 20px rgba(26,41,66,0.05);
+    transition:box-shadow .3s;
+  }
+  .obj-card:hover{box-shadow:0 12px 30px rgba(26,41,66,0.1);}
+  .obj-q{display:flex;gap:20px;margin-bottom:14px;align-items:flex-start;}
+  .obj-mark{
+    width:40px;height:40px;border-radius:50%;
+    background:var(--mint-100);color:var(--teal-dark);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    font-family:var(--serif);font-style:italic;font-weight:700;font-size:24px;
+  }
+  .obj-q h3{
+    font-family:var(--sans);font-size:20px;font-weight:800;
+    color:var(--navy);line-height:1.4;flex:1;padding-top:6px;
+  }
+  .obj-a{
+    padding-right:60px;font-size:15px;line-height:1.85;
+    color:var(--ink-soft);font-weight:400;
+  }
+  .obj-a strong{color:var(--teal-dark);font-weight:700;}
+  @media(max-width:639px){.obj-a{padding-right:0;}}
+
+  /* ── FINAL CTA ── */
+  .final-cta{
+    background:linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%);
+    color:#fff;text-align:center;position:relative;overflow:hidden;
+    padding:140px 0;
+  }
+  .final-cta::before{
+    content:'';position:absolute;top:-100px;right:-100px;
+    width:400px;height:400px;border-radius:50%;
+    background:rgba(255,255,255,0.06);
+  }
+  .final-cta::after{
+    content:'';position:absolute;bottom:-150px;left:-150px;
+    width:500px;height:500px;border-radius:50%;
+    background:rgba(255,255,255,0.04);
+  }
+  .final-cta-inner{position:relative;z-index:2;}
+  .final-cta .eyebrow{color:rgba(255,255,255,0.85);display:block;margin-bottom:24px;}
+  .final-cta h2{
+    color:#fff;font-size:clamp(36px,5.2vw,68px);
+    max-width:920px;margin:0 auto 28px;
+  }
+  .final-cta h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:#fff;opacity:0.95;}
+  .final-cta p{
+    font-size:18px;line-height:1.85;max-width:680px;margin:0 auto 44px;
+    color:rgba(255,255,255,0.9);font-weight:400;
+  }
+  .final-cta-fine{
+    margin-top:24px;font-size:13px;color:rgba(255,255,255,0.85);font-weight:500;
+  }
+
+  /* ── PARTNERS ── */
+  .partners{background:#fff;padding:80px 0;border-top:1px solid var(--line);}
+  .partners-label{
+    text-align:center;font-size:13px;letter-spacing:0.18em;
+    color:var(--muted);text-transform:uppercase;font-weight:700;
+    margin-bottom:32px;
+  }
+  .partners-row{
+    display:flex;justify-content:center;gap:16px;flex-wrap:wrap;align-items:center;
+  }
+  .partner{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 28px;border-radius:999px;
+    background:var(--mint-50);border:1px solid var(--line);
+    font-size:15px;font-weight:700;color:var(--navy);
+  }
+  .partner-dot{
+    width:8px;height:8px;border-radius:50%;background:var(--teal);
+  }
+
+  /* ── HOURS ── */
+  .hours{background:var(--mint-100);padding:96px 0;}
+  .hours-head{text-align:center;margin-bottom:48px;}
+  .hours-head .eyebrow{display:block;margin-bottom:14px;}
+  .hours-head h3{font-size:32px;font-weight:800;color:var(--navy);}
+  .hours-grid{
+    display:grid;grid-template-columns:1fr;gap:20px;max-width:760px;margin:0 auto;
+  }
+  @media(min-width:640px){.hours-grid{grid-template-columns:1fr 1fr;}}
+  .hours-card{
+    background:#fff;border-radius:28px;
+    padding:32px 28px;text-align:center;
+    border:1px solid var(--line);
+    box-shadow:0 4px 16px rgba(26,41,66,0.05);
+  }
+  .hours-card-icon{
+    width:56px;height:56px;border-radius:50%;
+    background:var(--mint-100);color:var(--teal);
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 18px;
+  }
+  .hours-card-icon svg{width:24px;height:24px;}
+  .hours-card-label{
+    font-size:13px;font-weight:700;letter-spacing:0.12em;
+    color:var(--muted);text-transform:uppercase;margin-bottom:8px;
+  }
+  .hours-card-val{
+    font-size:22px;font-weight:800;color:var(--navy);margin-bottom:4px;
+  }
+  .hours-card-link{
+    font-size:13px;color:var(--teal);font-weight:700;
+    text-decoration:none;display:inline-block;margin-top:10px;
+    transition:color .3s;
+  }
+  .hours-card-link:hover{color:var(--teal-dark);}
+
+  /* ── FOOTER ── */
+  footer{
+    background:var(--navy-deep);color:rgba(255,255,255,0.6);
+    padding:72px 0 48px;text-align:center;
+  }
+  footer .footer-brand{
+    display:inline-flex;align-items:center;gap:12px;
+    margin-bottom:28px;
+  }
+  footer .footer-brand-mark{
+    width:42px;height:42px;border-radius:50%;
+    background:rgba(64,160,157,0.2);
+    border:2px solid var(--teal);
+    display:flex;align-items:center;justify-content:center;
+  }
+  footer .footer-brand-mark svg{width:22px;height:22px;color:var(--teal-lighter);}
+  footer .footer-brand-name{
+    font-size:15px;font-weight:700;letter-spacing:0.28em;color:#fff;
+  }
+  footer nav{
+    display:flex;justify-content:center;gap:36px;margin-bottom:36px;flex-wrap:wrap;
+  }
+  footer nav a{
+    color:rgba(255,255,255,0.7);text-decoration:none;
+    font-size:14px;font-weight:500;
+    transition:color .3s;
+  }
+  footer nav a:hover{color:var(--teal-lighter);}
+  footer .copy{
+    font-size:13px;color:rgba(255,255,255,0.5);
+    padding-top:28px;border-top:1px solid rgba(255,255,255,0.1);
+    max-width:680px;margin:0 auto;
+  }
+
+  /* ── FLOATING BUTTONS ── */
+  .float-btn{
+    position:fixed;left:24px;z-index:100;
+    width:56px;height:56px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    text-decoration:none;color:#fff;
+    transition:all .3s;
+    box-shadow:0 8px 24px rgba(0,0,0,0.2);
+  }
+  .float-call{bottom:96px;background:var(--teal);}
+  .float-call:hover{background:var(--teal-dark);transform:scale(1.08);}
+  .float-wa{bottom:24px;background:#25D366;}
+  .float-wa:hover{background:#1ebd5a;transform:scale(1.08);}
+  .float-btn svg{width:24px;height:24px;}
+
+  /* form messages */
+  .form-message{padding:14px 20px;margin-bottom:18px;font-size:14px;text-align:center;font-weight:600;border-radius:14px;}
+  .form-message.success{background:var(--mint-100);color:var(--teal-dark);border:1px solid var(--teal);}
+  .form-message.error{background:#fde8e8;color:#c53030;border:1px solid #f56565;}
+
+  /* Mobile */
+  @media(max-width:767px){
+    .container,.container-narrow{padding:0 20px;}
+    .hero-form{padding:36px 24px;}
+    .hero-inner{padding:36px 20px 64px;}
+    .future-list-wrap{padding:36px 24px;}
+    .problem-quote{padding:32px 28px;}
+    .obj-card{padding:28px 24px;}
+    .obj-q{gap:14px;}
+    .founder-content{padding:40px 24px;}
+  }
+</style>
+
+<meta name="NetsparkQuiltingResult" total-length="60327" removed="0" rules-found="w3509,w3573,w73,w6820,w11433,w6193,w6207,w6208,r6016s49p12,w9610,w9611,w4829,w4830,w2656,w16466,w27088,w26854,w19266,w17902,w27295,w16585,w26891,w19378,w27087,w19458,w27217" />
+</head>
+<body>
+
+<!-- QUALIFIER BAR -->
+<div class="qualifier">סובלים מחרדה דנטלית ודוחים טיפולי שיניים חשובים?</div>
+
+<!-- PROMO STRIP -->
+<div class="promo">
+  <div class="promo-inner">
+    <div class="promo-mark">✓</div>
+    <div class="promo-text">מבצע מיוחד למגיעים מהאתר: בדיקה וצילום רנטגן — <strong>חינם!</strong></div>
+    <div class="promo-sub">ללא עלות · רק לבאים דרך האתר</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-tint"></div>
+  <div class="hero-pattern"></div>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-brand">
+        <div class="hero-brand-mark">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4 C 10 4, 6 7, 6 12 C 6 16, 8 22, 10 26 C 11 28, 12 28, 13 26 C 14 24, 15 22, 16 22 C 17 22, 18 24, 19 26 C 20 28, 21 28, 22 26 C 24 22, 26 16, 26 12 C 26 7, 22 4, 16 4 Z" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <div class="hero-brand-name">חיוכים SMILE</div>
+          <div class="hero-brand-sub">מרכז למומחים לרפואה דנטלית</div>
+        </div>
+      </div>
+
+      <h1>
+        חיוך <em>מושלם ובריא</em><br>
+        בלי פחד. סוף סוף.
+      </h1>
+
+      <p class="hero-lede">
+        גלו את הדרך לטיפול שיניים מתקדם באווירה רגועה, עם שקיפות מלאה ויחס אישי שמחזיר לכם את הביטחון <strong>לחייך בגדול</strong>.
+      </p>
+
+      <div class="hero-attrs">
+        <div class="hero-attr">
+          <div class="hero-attr-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></div>
+          יחס אישי
+        </div>
+        <div class="hero-attr">
+          <div class="hero-attr-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></div>
+          שקיפות במחיר
+        </div>
+        <div class="hero-attr">
+          <div class="hero-attr-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></div>
+          מינימום כאב
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-form-wrap">
+      <div class="hero-form">
+        <div class="hero-form-badge">קבלו ייעוץ ללא עלות</div>
+        <h3 class="form-title"><em>צעד ראשון</em> לחיוך חדש</h3>
+        <p class="form-sub">השאירו פרטים ונחזור אליכם לתיאום פגישת היכרות קצרה.</p>
+
+        <form id="lead-form">
+          <div class="form-field">
+            <label for="name">שם מלא (חובה)</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">מספר טלפון (חובה)</label>
+            <input type="tel" id="phone" name="phone" required dir="ltr">
+          </div>
+          <div class="form-field">
+            <label for="email">דואר אלקטרוני (אופציונלי)</label>
+            <input type="email" id="email" name="email" dir="ltr">
+          </div>
+          <button type="submit" class="form-cta">
+            קבלו ייעוץ ראשוני ללא התחייבות
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          </button>
+          <div class="form-secure">
+            <svg viewBox="0 0 12 14" fill="currentColor"><path d="M6 0a3 3 0 0 1 3 3v2h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h1V3a3 3 0 0 1 3-3zm0 1.5A1.5 1.5 0 0 0 4.5 3v2h3V3A1.5 1.5 0 0 0 6 1.5z"/></svg>
+            הפרטים שלכם מאובטחים ולא יועברו לצד שלישי
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="watermark watermark-teal" style="top:60px;right:-30px;">חרדה</div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="problem-grid">
+      <div class="problem-img-wrap">
+        <img src="https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&fit=crop&w=900&q=85" alt="" class="problem-img">
+      </div>
+
+      <div class="problem-content">
+        <span class="eyebrow">מעגל ההזנחה</span>
+        <h2 style="margin-top:20px;">האם מעגל החרדה וההזנחה הזה <em>נשמע לכם מוכר</em>?</h2>
+        <p>המאבק השקט שמתרחש בראשכם לפני כל ביקור אצל רופא שיניים הוא אמיתי. הוא מתיש. והוא גורם לכם להישאר במקום שפוגע לכם בבריאות ובביטחון העצמי.</p>
+
+        <ul class="problem-list">
+          <li>
+            <div class="problem-list-mark">1</div>
+            <div class="problem-list-text">אתם מרגישים <strong>דפיקות לב מואצות</strong> רק מלחשוב על כיסא הטיפולים.</div>
+          </li>
+          <li>
+            <div class="problem-list-mark">2</div>
+            <div class="problem-list-text">אתם חוששים מכאב בלתי צפוי או מזריקת ההרדמה <strong>שרודפת אתכם מילדות</strong>.</div>
+          </li>
+          <li>
+            <div class="problem-list-mark">3</div>
+            <div class="problem-list-text">אתם שונאים את תחושת חוסר השליטה וההפתעות במהלך הטיפול.</div>
+          </li>
+          <li>
+            <div class="problem-list-mark">4</div>
+            <div class="problem-list-text">אתם מרגישים שמנסים <strong>"לדחוף" לכם טיפולים</strong> יקרים בלי הסבר שקוף.</div>
+          </li>
+          <li>
+            <div class="problem-list-mark">5</div>
+            <div class="problem-list-text">אתם מתביישים לחייך בתמונות וסוגרים את הפה כדי להסתיר את מצב השיניים.</div>
+          </li>
+          <li>
+            <div class="problem-list-mark">6</div>
+            <div class="problem-list-text">אתם דוחים תורים שוב ושוב, עד שהכאב הופך לבלתי נסבל.</div>
+          </li>
+        </ul>
+
+        <div class="problem-quote">
+          <p>זהו "מעגל הפחד הדנטלי". הוא מתחיל בחרדה שגורמת לכם להימנע מטיפול, מה שמוביל להחמרת הבעיות, וזה בתורו רק מגביר את החרדה והבושה.<br><br>אבל דמיינו לרגע מציאות אחרת. מציאות שבה אתם נכנסים למרפאה ומרגישים <strong>רוגע ושלווה</strong>. מציאות שבה אתם סומכים ב-100% על הצוות, מבינים כל שלב בתהליך, והכי חשוב — אתם יוצאים עם חיוך בריא, אסתטי וקורן, ועם תחושת הקלה עצומה. זו לא פנטזיה. <strong>זו הבטחה</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRIDGE -->
+<section class="bridge">
+  <div class="watermark" style="bottom:40px;left:-40px;">smile.</div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="bridge-head">
+      <span class="eyebrow">הגישה שלנו</span>
+      <h2>אפשר גם וגם: גם טיפול שיניים ברמה הגבוהה ביותר, <em>וגם חוויה אנושית ומרגיעה</em>.</h2>
+      <p>במרפאת חיוכים SMILE, אנו משלבים רפואת שיניים מתקדמת עם גישה שמציבה אתכם במרכז. אצלנו, אתם לא "עוד מטופל", אלא אדם עם צרכים, חששות ושאיפות, ואנחנו כאן כדי להקשיב ולהוביל אתכם בבטחה אל התוצאה שתמיד רציתם.</p>
+    </div>
+
+    <div class="bridge-grid">
+      <div class="bridge-card">
+        <div class="bridge-card-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4 C 10 4, 6 7, 6 12 C 6 16, 8 22, 10 26 C 11 28, 12 28, 13 26 C 14 24, 15 22, 16 22 C 17 22, 18 24, 19 26 C 20 28, 21 28, 22 26 C 24 22, 26 16, 26 12 C 26 7, 22 4, 16 4 Z" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>מקצועיות ואנושיות</h3>
+        <p><strong>גם</strong> טיפול מקצועי ובלתי מתפשר, <strong>וגם</strong> הסבר סבלני בגובה העיניים.</p>
+      </div>
+      <div class="bridge-card">
+        <div class="bridge-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>חדשנות ורוגע</h3>
+        <p><strong>גם</strong> טכנולוגיה רפואית חדשנית, <strong>וגם</strong> סביבה חמה ונטולת חרדות.</p>
+      </div>
+      <div class="bridge-card">
+        <div class="bridge-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4" stroke-linecap="round"/></svg>
+        </div>
+        <h3>שקיפות וליווי</h3>
+        <p><strong>גם</strong> תוכנית טיפולים שקופה לחלוטין, <strong>וגם</strong> ליווי אישי וזמינות גבוהה.</p>
+      </div>
+    </div>
+
+    <div class="bridge-cta-wrap">
+      <a href="#lead-form" class="btn btn-white">קבלו ייעוץ ראשוני ללא התחייבות</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="watermark watermark-teal" style="top:30px;left:-20px;">98%</div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="stats-head">
+      <span class="eyebrow">המספרים שלנו</span>
+      <h2 style="margin-top:18px;">המספרים שמראים שאפשר <em>לחייך בלי פחד</em></h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">98<em>%</em></div>
+        <div class="stat-label">הפחתה מדווחת בחרדה<br>לאחר הטיפול הראשון</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">15<em>+</em></div>
+        <div class="stat-label">שנות ניסיון במקרים<br>מורכבים וחרדה דנטלית</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2,500<em>+</em></div>
+        <div class="stat-label">חיוכים חדשים<br>של מטופלים מרוצים</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100<em>%</em></div>
+        <div class="stat-label">שקיפות בתוכנית<br>הטיפול והמחירים</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="solution">
+  <div class="watermark" style="top:80px;right:-40px;">השיטה</div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="solution-grid">
+      <div class="solution-img-wrap">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=85" alt="" class="solution-img">
+        <div class="solution-badge">
+          <div class="solution-badge-dot"></div>
+          <div class="solution-badge-text">השקט הנפשי שלכם — בראש</div>
+        </div>
+      </div>
+
+      <div class="solution-content">
+        <span class="eyebrow">השיטה הייחודית שלנו</span>
+        <h2>
+          גילינו את הסוד להילחם בחרדה הדנטלית
+          <span class="small">(רמז: זה לא קשור רק לשיניים)</span>
+        </h2>
+        <p>הבנו שהפחד הגדול ביותר של מטופלים אינו הכאב הפיזי, אלא <strong>הפחד מחוסר ודאות</strong>. הפחד שלא יבינו אתכם, שלא יסבירו לכם, שתאבדו שליטה. לכן, אנחנו בחיוכים SMILE — עובדים בגישה ייחודית ששמה את השקט הנפשי שלכם בראש סדר העדיפויות.</p>
+
+        <div class="solution-step">
+          <div class="solution-step-num">1</div>
+          <div>
+            <h3>הכל מתחיל בהקשבה</h3>
+            <p>הפגישה הראשונה שלנו מוקדשת כולה לכם. לא לפה שלכם, אלא לכם. נשב יחד באווירה נינוחה, נבין לעומק את החששות, הצרכים והמטרות שלכם. רק אחרי שנכיר אתכם, נבנה יחד את הדרך לחיוך המושלם.</p>
+          </div>
+        </div>
+
+        <div class="solution-step">
+          <div class="solution-step-num">2</div>
+          <div>
+            <h3>שקיפות היא ערך עליון</h3>
+            <p>אצלנו אין הפתעות. תקבלו תוכנית טיפולים מפורטת ומסודרת, עם מחירים ברורים וגלויים מראש. נסביר לכם כל שלב ושלב, נראה לכם צילומים והדמיות, ונוודא שאתם מרגישים <strong>בשליטה מלאה</strong> על התהליך.</p>
+          </div>
+        </div>
+
+        <div class="solution-step">
+          <div class="solution-step-num">3</div>
+          <div>
+            <h3>טכנולוגיה בשירות הרוגע שלכם</h3>
+            <p>אנו משתמשים בטכנולוגיות המתקדמות ביותר כדי להבטיח טיפול מדויק, יעיל ועם <strong>מינימום כאב</strong>. החל מסריקות דיגיטליות ועד לשיטות אלחוש מודרניות, הכל נועד כדי להפוך את החוויה שלכם לבטוחה ונוחה ככל האפשר.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE -->
+<section class="future">
+  <div class="watermark watermark-teal" style="top:80px;left:50%;transform:translateX(-50%);">3 חודשים</div>
+  <div class="container-narrow future-inner" style="position:relative;z-index:1;">
+    <span class="eyebrow">דמיינו את עצמכם</span>
+    <h2 style="margin-top:20px;">עצמו עיניים ודמיינו את עצמכם <em>בעוד 3 חודשים</em> מהיום…</h2>
+    <p class="future-lede">אתם מסתכלים במראה, והחיוך שאתם רואים גורם לכם להרגיש <strong>גאווה ושמחה</strong>. הבושה נעלמה, והביטחון העצמי חזר ובגדול. אתם כבר לא מהססים לפני שאתם צוחקים בקול רם עם חברים או מחייכים בתמונה משפחתית.</p>
+
+    <div class="future-list-wrap">
+      <div class="future-list-head">הנה מה שהופך לאפשרי עבורכם:</div>
+      <ul class="future-list">
+        <li>
+          <span class="future-list-check"><svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 7l2.5 2.5L10.5 4"/></svg></span>
+          <span>אתם מרגישים חופשיים ומשוחררים. לא עוד מחשבות טורדניות על השיניים שלכם.</span>
+        </li>
+        <li>
+          <span class="future-list-check"><svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 7l2.5 2.5L10.5 4"/></svg></span>
+          <span>אתם נהנים מאוכל בלי לחשוש מכאבים או אי נוחות.</span>
+        </li>
+        <li>
+          <span class="future-list-check"><svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 7l2.5 2.5L10.5 4"/></svg></span>
+          <span>אתם נכנסים לפגישת בדיקה שגרתית בתחושת <strong>שליטה ורוגע</strong>, בידיעה שאתם בידיים טובות.</span>
+        </li>
+        <li>
+          <span class="future-list-check"><svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 7l2.5 2.5L10.5 4"/></svg></span>
+          <span>אתם מקבלים מחמאות על החיוך שלכם, ומרגישים נפלא עם עצמכם.</span>
+        </li>
+      </ul>
+    </div>
+
+    <p class="future-closing">התחושה הזאת של הקלה, של שקט נפשי, של ביטחון עצמי מחודש — היא <em>בלתי ניתנת לתיאור</em>. וזה בדיוק מה שאנחנו רוצים להעניק לכם.</p>
+
+    <a href="#lead-form" class="btn btn-teal">אני רוצה להרגיש כך</a>
+  </div>
+</section>
+
+<!-- MECHANISM -->
+<section class="mechanism">
+  <div class="watermark" style="top:40px;right:-30px;">התהליך</div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="mechanism-head">
+      <span class="eyebrow">התהליך</span>
+      <h2>אז איך בדיוק הופכים <em>פחד לחיוך מושלם</em>?</h2>
+      <p>הנה התהליך הפשוט והבטוח שלנו:</p>
+    </div>
+
+    <div class="mechanism-grid">
+      <div class="mech-card">
+        <div class="mech-num">1</div>
+        <h3>פגישת ייעוץ והיכרות</h3>
+        <p>(ללא התחייבות): נשב יחד באווירה רגועה, נקשיב לכם, נאבחן את מצב הפה באופן יסודי באמצעות צילומים מתקדמים, והכי חשוב – נבין את הצרכים והחששות שלכם.</p>
+      </div>
+      <div class="mech-card">
+        <div class="mech-num">2</div>
+        <h3>בניית תוכנית טיפולים שקופה</h3>
+        <p>תקבלו תוכנית מפורטת, המותאמת אישית אליכם. נסביר על כל האפשרויות, נפרט עלויות בצורה ברורה, ונענה על כל שאלה בסבלנות. <strong>ההחלטה תמיד בידיים שלכם</strong>.</p>
+      </div>
+      <div class="mech-card">
+        <div class="mech-num">3</div>
+        <h3>מתחילים בקצב שלכם</h3>
+        <p>ניישם את התוכנית שלב אחר שלב, תוך שימוש בטכנולוגיות להפחתת כאב ואי נוחות. הצוות יהיה זמין עבורכם, יוודא שאתם בנוח וייתן לכם <strong>תחושת ביטחון מוחלטת</strong>.</p>
+      </div>
+      <div class="mech-card">
+        <div class="mech-num">4</div>
+        <h3>חיוך חדש וביטחון מחודש</h3>
+        <p>בסיום התהליך, לא רק שתקבלו חיוך בריא ואסתטי, אלא גם תצאו עם תחושת הקלה אדירה ועם הידיעה שמצאתם בית דנטלי שאפשר לסמוך עליו לכל החיים.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder">
+  <div class="container">
+    <div class="founder-card">
+      <div class="founder-img-wrap">
+        <img src="https://images.unsplash.com/photo-1631051103633-24959376b92d?auto=format&fit=crop&w=900&q=85" alt="" class="founder-img">
+        <div class="founder-overlay"></div>
+        <div class="founder-tag">סיפור המייסד</div>
+      </div>
+      <div class="founder-content">
+        <span class="eyebrow">מילד שפחד, לרופא שמרגיע</span>
+        <h2 style="margin-top:18px;">מילד שפחד מרופאי שיניים <em>למי שהפך את המרפאה למקום בטוח</em></h2>
+        <p>כל חיי סבלתי מחרדה דנטלית. אני זוכר את ריח המרפאה, את קול המקדחה, את תחושת חוסר האונים על הכיסא. כל טיפול היה סיוט שהוביל אותי לדחות ולהזניח, עד שהבנתי — <strong>הבעיה היא לא אני, אלא הגישה</strong>. הרגשתי שהרופאים מתייחסים לפה שלי, אבל לא לאדם שמאחוריו.</p>
+        <h3>הפער שגיליתי בשוק</h3>
+        <p>כשבגרתי והפכתי לרופא שיניים בעצמי, נשבעתי שאצלי זה יהיה אחרת. ראיתי כל כך הרבה מרפאות שמתמקדות בטכניקה, אבל שוכחות את הנפש. הן מציעות רפואה מתקדמת, אבל לא מצליחות להעניק את הדבר החשוב ביותר: <strong>שקט נפשי וביטחון</strong>.</p>
+        <p>הבנתי שחסר מקום שמציע את השילוב המנצח: מקצועיות רפואית ללא פשרות, שקיפות מלאה ואמיתית מהרגע הראשון, ואנושיות, אמפתיה והקשבה אמיתית למטופל.</p>
+        <h3>המשימה שלי: ליצור חוויה דנטלית אחרת</h3>
+        <p>לכן הקמתי את חיוכים SMILE. המטרה שלי היא לא רק לתקן שיניים, אלא לשנות את כל חווית הטיפול. להפוך את המרפאה למקום שאליו מגיעים ברוגע, בידיעה שתמיד יראו אתכם, יקשיבו לכם, ויעשו הכל כדי שתצאו עם <strong>חיוך מושלם</strong> ותחושת ביטחון מחודשת.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIONS -->
+<section class="objections">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">שאלות שעולות בראש</span>
+      <h2 style="margin-top:18px;">אולי כמה מחשבות <em>עוברות לכם בראש</em> כרגע…</h2>
+    </div>
+
+    <div class="obj-list">
+      <div class="obj-card">
+        <div class="obj-q">
+          <div class="obj-mark">?</div>
+          <h3>"אולי מאוחר מדי בשבילי, הזנחתי את השיניים יותר מדי שנים."</h3>
+        </div>
+        <p class="obj-a">זו תחושה נפוצה, אך כמעט תמיד לא נכונה. בזכות הטכנולוגיות המתקדמות הקיימות היום, ניתן לשקם גם מצבים מורכבים ולהגיע לתוצאות מדהימות. המטרה שלנו היא לא לשפוט, אלא למצוא יחד את הפתרון הטוב ביותר עבורכם, <strong>בלי קשר לנקודת ההתחלה</strong>.</p>
+      </div>
+
+      <div class="obj-card">
+        <div class="obj-q">
+          <div class="obj-mark">?</div>
+          <h3>"אני פשוט מפחד שזה יכאב. אין דבר כזה טיפול שיניים בלי כאב."</h3>
+        </div>
+        <p class="obj-a">אנחנו מבינים את הפחד הזה לעומק. לכן, אנו משתמשים בשיטות אלחוש מודרניות ובטכניקות מתקדמות להפחתת כאב. אך מעבר לכך, אנו יוצרים סביבה רגועה ומתקשרים אתכם לכל אורך הדרך. כשיודעים מה עומד לקרות ומרגישים בשליטה, <strong>רמת החרדה והכאב יורדת פלאים</strong>.</p>
+      </div>
+
+      <div class="obj-card">
+        <div class="obj-q">
+          <div class="obj-mark">?</div>
+          <h3>"בסוף כל הרופאים אותו דבר, רק רוצים לגמור מהר ולגבות כסף."</h3>
+        </div>
+        <p class="obj-a">אנחנו כאן כדי להוכיח שיש דרך אחרת. הגישה שלנו מבוססת על בניית <strong>מערכת יחסים ארוכת טווח</strong> עם המטופלים שלנו, המבוססת על אמון ושקיפות. ההצלחה שלנו נמדדת בחיוך שלכם ובתחושת הביטחון שלכם לחזור אלינו שוב ושוב.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container final-cta-inner">
+    <span class="eyebrow">הצעד הראשון</span>
+    <h2 style="margin-top:24px;">הגיע הזמן <em>לשים סוף לפחד</em><br>ולהתחיל לחייך בביטחון</h2>
+    <p>קחו את הצעד הראשון והחשוב ביותר לקראת החיוך שתמיד רציתם. השאירו פרטים עכשיו לפגישת ייעוץ מקיפה באווירה אחרת, שבה נקשיב לכם, נבנה יחד תוכנית שקופה ונוביל אתכם בבטחה אל התוצאה.</p>
+    <a href="#lead-form" class="btn btn-white">כן, מתחילים את השינוי עכשיו</a>
+    <div class="final-cta-fine">100% ללא התחייבות · ההתחייבות שלנו לשקט הנפשי שלכם</div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners">
+  <div class="container">
+    <div class="partners-label">עובדים עם קופות חולים וגופים פרטיים</div>
+    <div class="partners-row">
+      <div class="partner"><span class="partner-dot"></span>ג'נטל קייר</div>
+      <div class="partner"><span class="partner-dot"></span>מיי דוקטור</div>
+      <div class="partner"><span class="partner-dot"></span>הפניקס</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS -->
+<section class="hours">
+  <div class="container">
+    <div class="hours-head">
+      <span class="eyebrow">בקרו אותנו</span>
+      <h3>שעות פעילות וכתובת המרפאה</h3>
+    </div>
+    <div class="hours-grid">
+      <div class="hours-card">
+        <div class="hours-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="hours-card-label">ראשון–חמישי</div>
+        <div class="hours-card-val">10:00 – 18:00</div>
+      </div>
+      <div class="hours-card">
+        <div class="hours-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="hours-card-label">כתובת</div>
+        <div class="hours-card-val">העבודה 41, אשקלון</div>
+        <a href="https://maps.google.com/?q=העבודה+41+אשקלון" target="_blank" rel="noopener" class="hours-card-link">נווט אלינו ←</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-brand">
+      <div class="footer-brand-mark">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4 C 10 4, 6 7, 6 12 C 6 16, 8 22, 10 26 C 11 28, 12 28, 13 26 C 14 24, 15 22, 16 22 C 17 22, 18 24, 19 26 C 20 28, 21 28, 22 26 C 24 22, 26 16, 26 12 C 26 7, 22 4, 16 4 Z" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="footer-brand-name">חיוכים SMILE</div>
+    </div>
+    <nav>
+      <a href="#">תקנון האתר</a>
+      <a href="#">מדיניות פרטיות</a>
+      <a href="#">הצהרת נגישות</a>
+    </nav>
+    <div class="copy">© 2026 חיוכים SMILE · כל הזכויות שמורות</div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="tel:+972500000000" class="float-btn float-call" aria-label="חייגו עכשיו">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+<a href="https://wa.me/972500000000" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="וואטסאפ">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852-0.799-0.74-1.484-1.587-2.037-2.521-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604 0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079 0.131 1.467 0.681 2.784 1.527 3.857 1.604 2.379 3.742 4.282 6.251 5.564 0.548 0.248 1.25 0.513 1.968 0.74 0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078 1.069-0.223 1.956-0.868 2.497-1.749 0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542-0.092-0.155-0.34-0.247-0.712-0.434z"/></svg>
+</a>
+
+<script>
+(function(){
+  function initForm(){
+    const form=document.getElementById("lead-form");
+    if(!form)return;
+    form.addEventListener("submit",async(e)=>{
+      e.preventDefault();
+      const old=form.querySelector(".form-message");if(old)old.remove();
+      const fd=new FormData(form);const data={};fd.forEach((v,k)=>data[k]=v);
+      const [slug]=window.location.hostname.split(".");
+      try{
+        const r=await fetch(`https://api-1.landy-ai.com/leads/${encodeURIComponent(slug)}`,{
+          method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)
+        });
+        if(r.ok){
+          const s=document.createElement("div");s.className="form-message success";
+          s.textContent="תודה רבה! פרטיך התקבלו בהצלחה. נחזור אליך בהקדם.";
+          form.prepend(s);form.reset();
+        }else throw new Error();
+      }catch{
+        const er=document.createElement("div");er.className="form-message error";
+        er.textContent="אירעה שגיאה בשליחת הטופס. אנא נסה שוב מאוחר יותר.";
+        form.prepend(er);
+      }
+    });
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initForm);
+  else initForm();
+})();
+</script>
+</body>
+</html>
